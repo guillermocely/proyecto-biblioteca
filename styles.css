@@ -1,0 +1,115 @@
+.body {
+    font-family: Arial, sans-serif; /* Fuente del texto */
+    background: linear-gradient(to bottom, #ffcc70, #ff9a9e); /* Fondo con degradado */
+    margin: 0; /* Elimina los márgenes por defecto */
+    padding: 0; /* Elimina los espacios internos */
+    text-align: center; /* Centra el texto en el cuerpo */
+    position: relative; /* Para el posicionamiento de los elementos internos */
+    height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+}
+
+/* Gradiente superpuesto */
+.gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #A5F930 0%, #A59292 27%, #6D6161 53.5%, #B39E9E 75%, #A5F930 97%);
+    opacity: 0.65;
+    z-index: 1; /* Asegura que el gradiente esté por encima del fondo */
+}
+
+/* Logo */
+.logo {
+    position: absolute; /* Posicionamiento absoluto */
+    top: 40px; /* Distancia desde la parte superior */
+    left: 50%; /* Centrado horizontal */
+    transform: translateX(-50%); /* Centrado horizontal */
+    width: 200px; /* Ajusta el tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    z-index: 16; /* Asegura que el logo esté por encima del gradiente */
+}
+
+/* Contenido */
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centrado vertical y horizontal */
+    background-color: white; /* Fondo del formulario */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    z-index: 2; /* Asegura que el contenido esté por encima del gradiente */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle un efecto de elevación */
+    width: 90%; /* Ancho relativo para móviles */
+    max-width: 400px; /* Máximo ancho para evitar que se estire demasiado */
+}
+h2 {
+    align-items: center;
+    padding: 22%;
+    
+}
+/* Estilos de los formularios */
+form {
+    display: flex;
+    flex-direction: column; /* Organiza los elementos en columna */
+    align-items: center; /* Centra los elementos dentro del formulario */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 90%; /* Ancho relativo */
+    margin-bottom: 15px; /* Espaciado entre campos */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+button {
+    padding: 10px 20px; /* Espaciado del botón */
+    background-color: #4CAF50; /* Color de fondo del botón */
+    color: white; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+button:hover {
+    background-color: #45a049; /* Color de fondo al pasar el cursor */
+}
+
+/* Estilo para los logos de las redes sociales */
+.social-logos {
+    display: flex; /* Usa flexbox para organizar los logos en línea */
+    justify-content: center; /* Centra los logos */
+    margin-top: 15px; /* Espaciado superior */
+}
+
+.social-logo {
+    width: 40px; /* Tamaño de los logos de redes sociales */
+    margin: 0 10px; /* Espaciado entre logos */
+}
+
+/* Media Queries para ajustar el diseño en dispositivos móviles */
+@media (max-width: 600px) {
+    .logo {
+        width: 150px; /* Tamaño del logo en móviles */
+    }
+
+    .content {
+        padding: 10px; /* Reducir espacio interno en móviles */
+    }
+
+    input[type="email"],
+    input[type="password"],
+    button {
+        width: 100%; /* Campos de formulario ocupan el 100% */
+        max-width: none; /* Sin ancho máximo */
+
+
+
+
+
+
+

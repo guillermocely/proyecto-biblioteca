@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Logo de plataforma sistema de gestion de biblioteca -->
+        <img src="imagenes/logo.png" alt="Logo de plataforma" class="logo">
+        <div class="background"></div>
+        <div class="gradient-overlay"></div>
+        <div class="content">
+         <main>
+                          <!--aqui va registro para ingreso a plataforma  -->
+                <section id="registroInicioSesion">
+                          <h2>INICIO DE SESION</h2> <!-- Título de inicio de sesion-->
+                         <form action="loginform" method="post">
+                              <label for="email">Usuario/Correo Electrónico</label> <!-- Etiqueta para el campo de usuario/correo a ingresar -->
+                              <input type="email" id="email" required=""> <!-- Campo de entrada para el correo -->
+    
+                              <label for="contraseña">contraseña</label> <!-- Etiqueta para el campo contraseña de usuario-->
+                              <input type="password" id="contraseña" required=""> <!-- ingresar contraseña-->
+                              <button type="submit">iniciar sesion</button> <!-- Botón para iniciar registro de sesion en la plataforma-->
+                         </form>
+                    <!--aqui va logo para iniciar registro por medio de red social -->
+                    <div class="social-logos">
+                        <a class="presentacion__enlace__link"href="https://accounts.google.com/accountchooser/signinchooser?checkedDomains=youtube&continue=https%3A%2F%2Fmail.google.com%2Fmail&ddm=1&dsh=S-1038050004%3A1740598582497533&flowEntry=AccountChooser&flowName=GlifWebSignIn&hl=es&ifkv=ASSHykojHum3hDZOAijmCHZp66fZU64mV1i113oc03YptwYGo8KuSb5DYHUyrXK47kkuE2FmI2HT&pstMsg=1">
+                        <img src="imagenes/google.png" alt="Logo de Google" class="social-logo"> <!--logo plataforma de correo de google -->
+                        </a>
+                        <a class="presentacion__enlace__link"href="https://www.facebook.com/">
+                            <img src="imagenes/logo facebook.png" alt="Logo de Facebook" class="social-logo"><!--logo plataforma de red social facebook-->
+                            </a>
+                        
+                    </div>
+              </section>
+         </main> 
+        
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
